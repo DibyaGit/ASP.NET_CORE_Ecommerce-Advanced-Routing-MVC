@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Filtered Products";
+}
+
+<div style="background-color: #f3e5f5; padding: 20px; border-radius: 8px; border: 1px solid #9c27b0;">
+    <h2 style="color: #6a1b9a;">🔍 Search Results</h2>
+    <hr />
+    <p>You successfully filtered our store inventory!</p>
+    
+    <ul>
+        <li><strong>Department:</strong> @ViewBag.FilteredCategory</li>
+        <li><strong>Price Range:</strong> @ViewBag.PriceRange</li>
+    </ul>
+    
+    <p><em>(In a real app, a list of products matching these rules would appear here.)</em></p>
+</div>
